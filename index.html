@@ -8,12 +8,14 @@
 </head>
 
 <body>
-    <h1>这是我的标题</h1>
+    <h1 onclick="myFunction()">这是我的标题</h1>
     <p id="demo"></p>
     <script>
         console.log("调试测试")
         let x = "显示错误"
-        document.querySelector("#demo").innerHTML = x;
+        function myFunction() {
+            document.querySelector("#demo").innerHTML = x;
+        }
         document.write("Hello World")
     </script>
 </body>
